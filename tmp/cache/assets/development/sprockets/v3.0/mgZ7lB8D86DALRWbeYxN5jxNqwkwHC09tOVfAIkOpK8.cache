@@ -1,0 +1,8 @@
+I"Ý(function() {
+  $(document).on("ajax:success", "form#comments-form", function(ev, data) {
+    $("textarea").val("");
+    return $("#listadoComentarios").append("<li>" + data.body + " - " + "</li>");
+  });
+
+}).call(this);
+:ET
